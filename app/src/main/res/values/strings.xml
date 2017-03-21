@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LockTaskMode-Exerciser</string>
+    <string name="stopLockTaskMode">Stop Lock Task Mode</string>
+    <string name="startLockTaskMode">Start Lock Task Mode</string>
+    <string name="getLockTaskMode">Get Lock Task Mode State</string>
+</resources>
