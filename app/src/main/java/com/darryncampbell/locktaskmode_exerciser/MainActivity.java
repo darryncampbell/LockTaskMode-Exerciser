@@ -50,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 ActivityManager activityManager = (ActivityManager)getSystemService(Context.ACTIVITY_SERVICE);
                 String szLockTaskState = "";
-                int ilockTaskState = activityManager.getLockTaskModeState();
+                int ilockTaskState = -1;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                    ilockTaskState = activityManager.getLockTaskModeState();
+                }
                 switch (ilockTaskState)
                 {
                     case ActivityManager.LOCK_TASK_MODE_NONE:
