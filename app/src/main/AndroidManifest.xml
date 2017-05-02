@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--  Supported values for lockTaskMode: normal and if_whitelisted -->
-        <activity android:name=".MainActivity"
-            android:lockTaskMode="normal">
+        <activity android:name=".MainActivity">
+            <!--android:lockTaskMode="normal"-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

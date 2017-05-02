@@ -3,4 +3,5 @@
     <string name="stopLockTaskMode">Stop Lock Task Mode</string>
     <string name="startLockTaskMode">Start Lock Task Mode</string>
     <string name="getLockTaskMode">Get Lock Task Mode State</string>
+    <string name="launchCalculator">Launch Calculator App</string>
 </resources>

@@ -2,6 +2,7 @@ package com.darryncampbell.locktaskmode_exerciser;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -69,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
                         szLockTaskState = "Unknown";
                 }
                 Toast.makeText(getApplicationContext(), "State: " + szLockTaskState, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button launchCalculatorButton = (Button) findViewById(R.id.btn_launchCalculator);
+        launchCalculatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_APP_CALCULATOR);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
